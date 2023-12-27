@@ -1,0 +1,128 @@
+{% load static %}
+<header>
+    {% comment %}
+    <!-- Navbar -->
+    {% endcomment %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        {% comment %}
+        <!-- Container wrapper -->
+        {% endcomment %}
+        <div class="container-fluid">
+            {% comment %}
+            <!-- Toggle button -->
+            {% endcomment %}
+            <button class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            {% comment %}
+            <!-- Collapsible wrapper -->
+            {% endcomment %}
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                {% comment %}
+                <!-- Navbar brand -->
+                {% endcomment %}
+                <a class="navbar-brand mt-2 mt-lg-0" href="/" id="logo">
+                    &#x23;synth.nu
+                </a>
+                {% comment %}
+                <!-- Left links -->
+                <!-- Genres -->
+                {% endcomment %}
+                <div class="dropdown">
+                    <a class="text-reset dropdown-toggle d-flex align-items-center pe-2"
+                       href="#"
+                       id="navbarDropdownMenuGenre"
+                       role="button"
+                       data-mdb-toggle="dropdown"
+                       aria-expanded="false">
+                        Genre
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuGenre">
+                        <li>
+                            <a class="dropdown-item" href="">All Genres</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                {% comment %}
+                <!-- Media type -->
+                {% endcomment %}
+                <div class="dropdown">
+                    <a class="text-reset dropdown-toggle d-flex align-items-center pe-2"
+                       href="#"
+                       id="navbarDropdownMenuMediaType"
+                       role="button"
+                       data-mdb-toggle="dropdown"
+                       aria-expanded="false">
+                        Media Type
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuMediaType">
+                        <li>
+                            <a class="dropdown-item" href="">All Media</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                {% comment %}
+                <!-- sort -->
+                {% endcomment %}
+                <div class="dropdown">
+                    <a class="text-reset dropdown-toggle d-flex align-items-center pe-2"
+                       href="#"
+                       id="navbarDropdownMenuSort"
+                       role="button"
+                       data-mdb-toggle="dropdown"
+                       aria-expanded="false">
+                        Sort
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuMediaType">
+                        <li>
+                            <a class="dropdown-item" href="">Sort by Price</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="">Sort by Rating</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">About</a>
+                    </li>
+                </ul>
+                {% comment %}
+                <!-- Left links -->
+                {% endcomment %}
+            </div>
+            {% comment %}
+            <!-- Collapsible wrapper -->
+            <!-- Right elements -->
+            {% endcomment %}
+            
+            
+            
+               
+            {% comment %}
+            <!-- Right elements -->
+            {% endcomment %}
+        </div>
+        {% comment %}
+        <!-- Container wrapper -->
+        {% endcomment %}
+    </nav>
+    {% comment %}
+    <!-- Navbar -->
+    {% endcomment %}
+</header>
