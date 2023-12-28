@@ -20,7 +20,6 @@
                     aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-
             {% comment %}
             <!-- Collapsible wrapper -->
             {% endcomment %}
@@ -29,100 +28,73 @@
                 <!-- Navbar brand -->
                 {% endcomment %}
                 <a class="navbar-brand mt-2 mt-lg-0" href="/" id="logo">
-                    &#x23;synth.nu
+                    &#x23;Home
                 </a>
                 {% comment %}
                 <!-- Left links -->
-                <!-- Genres -->
                 {% endcomment %}
-                <div class="dropdown">
-                    <a class="text-reset dropdown-toggle d-flex align-items-center pe-2"
-                       href="#"
-                       id="navbarDropdownMenuGenre"
-                       role="button"
-                       data-mdb-toggle="dropdown"
-                       aria-expanded="false">
-                        Genre
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="navbarDropdownMenuGenre">
-                        <li>
-                            <a class="dropdown-item" href="">All Genres</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                {% comment %}
-                <!-- Media type -->
-                {% endcomment %}
-                <div class="dropdown">
-                    <a class="text-reset dropdown-toggle d-flex align-items-center pe-2"
-                       href="#"
-                       id="navbarDropdownMenuMediaType"
-                       role="button"
-                       data-mdb-toggle="dropdown"
-                       aria-expanded="false">
-                        Media Type
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="navbarDropdownMenuMediaType">
-                        <li>
-                            <a class="dropdown-item" href="">All Media</a>
-                        </li>
-                        
-                    </ul>
-                </div>
-                {% comment %}
-                <!-- sort -->
-                {% endcomment %}
-                <div class="dropdown">
-                    <a class="text-reset dropdown-toggle d-flex align-items-center pe-2"
-                       href="#"
-                       id="navbarDropdownMenuSort"
-                       role="button"
-                       data-mdb-toggle="dropdown"
-                       aria-expanded="false">
-                        Sort
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-end"
-                        aria-labelledby="navbarDropdownMenuMediaType">
-                        <li>
-                            <a class="dropdown-item" href="">Sort by Price</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="">Sort by Rating</a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 breadcrumb">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/projects">Projects</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/about">About</a>
                     </li>
+
+
+
+                    {% with curr_url=request.path %}
+
+                    {% if curr_url == '/encyclopedia' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active nav-link" aria-current="page">Encyclopedia Galactica</li>
+                    {% elif curr_url == '/projects' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link active" aria-current="page"><a href="{% url 'projects' %}">Projects</a></li>
+                    {% elif curr_url == '/quiz' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active nav-link" aria-current="page">Quiz Master</li>
+                    {% elif curr_url == '/pirate_island' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active nav-link" aria-current="page">Pirate Island</li>
+                    {% elif curr_url == '/retro' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active nav-link" aria-current="page">RetroLovers United</li>
+                    {% elif curr_url == '/synth' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active nav-link" aria-current="page">#synth.nu</li>
+                    {% elif curr_url == '/portfolio' %}
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'index' %}"> | Home</a></li>
+                    <li class="breadcrumb-item nav-link"><a href="{% url 'projects' %}">Projects</a></li>
+                    <li class="breadcrumb-item active nav-link" aria-current="page">Portfolio</li>
+                    {% endif %}
+                    {% endwith %}
+
+
                 </ul>
+
+
                 {% comment %}
-                <!-- Left links -->
+                <!-- End Left links -->
                 {% endcomment %}
+                <i class="flag flag-uk"></i>
+                <i class="flag flag-se"></i>
             </div>
-            {% comment %}
-            <!-- Collapsible wrapper -->
-            <!-- Right elements -->
-            {% endcomment %}
-            
-            
-            
-               
-            {% comment %}
-            <!-- Right elements -->
-            {% endcomment %}
         </div>
         {% comment %}
-        <!-- Container wrapper -->
+        <!-- end Container wrapper -->
         {% endcomment %}
     </nav>
     {% comment %}
-    <!-- Navbar -->
+    <!-- end Navbar -->
     {% endcomment %}
 </header>

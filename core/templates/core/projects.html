@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Projects{% endblock title %}
+
+{% block content %}
+
+<div class="container container-bottom">
+    <div class="row core-divs">
+        <div class="col-md text-center">
+            <p>Projects</p>
+            <p>The projects I've developed, some better than others. You will notice a theme here...the projects
+            reflects my interests (apart from the IT stuff that is), science fiction, books, music, quizzes, and
+            retro computers.
+            </p>
+        </div>
+        <table class="table align-middle mb-0 bg-grey table-responsive">
+            <thead class="bg-light">
+                <tr>
+                    <th>Project</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody class="background">
+                <tr>
+                    <td>
+                        <a href="{% url 'encyclopedia' %}">Encyclopedia Galactica</a>
+                    </td>
+                    <td>
+                        A tribute to Isaac Asimov. Written in pure HTML and CSS.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="{% url 'quiz' %}">Quiz Master</a>
+                    </td>
+                    <td>
+                        A music quiz. Some html and css, but mostly javascript.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="{% url 'pirate_island' %}">Pirate Island</a>
+                    </td>
+                    <td>
+                        A miniature text-adventure game, written in pure Python.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="{% url 'retro' %}">RetroLovers United</a>
+                    </td>
+                    <td>
+                        A full-stack (Django, html, css, javascript, python) community site for people that love the Commodore Amiga line of computers.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="{% url 'synth' %}">#Synth.nu</a>
+                    </td>
+                    <td>
+                        A full-stack (Django, html, css, javascript, python) e-commerce site that "sells" synth-music on vinyl.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="{% url 'portfolio' %}">Portfolio</a>
+                    </td>
+                    <td>
+                        This site. A simple "frontend" written using Django5 to showcase my projects.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+    </div>
+</div>
+
+ {% endblock content %}

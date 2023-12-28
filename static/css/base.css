@@ -14,6 +14,7 @@
     --off-white: #f6f6f6; /* used for h1 */
     --white: #fff; /* used for maintext */
     --red: #FF0000; /* used for disclaimer bar and h1 on startpage*/
+    --grey: #777777; /* table background */
     /* utils */
     /* used for forms */
     --small-box-shadow: 1px -1px 7px 0 #00000061;
@@ -47,5 +48,26 @@ main {
 #copyright {
     color: var(--red);
     background-color: var(--black);
+}
+
+#logo {
+    /* style the text-only logo */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px red, 0 0 1em white, 0 0 0.2em black;
+}
+
+p {
+    font-family: var(--main-font);
+    font-size: x-large;
+    color: var(--red);
+}
+
+.td-desc {
+    color: var(--red);
+    font-size: small;
+}
+
+.background {
+    color: var(--grey);
 }
 
