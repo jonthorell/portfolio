@@ -36,7 +36,7 @@ DEBUG = True
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
-ALLOWED_HOSTS = ['*.herokuapp.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['portfolio-jt-5c98fa083d10.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -63,6 +63,9 @@ MESSAGE_TAGS = {
         messages.ERROR: 'alert-danger',
     }
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://portfolio-jt-5c98fa083d10.herokuapp.com/'
+]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -144,7 +147,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
