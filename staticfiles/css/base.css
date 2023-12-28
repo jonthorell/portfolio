@@ -58,7 +58,7 @@ main {
 
 p {
     font-family: var(--main-font);
-    font-size: x-large;
+    /*font-size: x-large;*/
     color: var(--red);
 }
 
@@ -70,4 +70,27 @@ p {
 .background {
     color: var(--grey);
 }
+
+h1 {
+    /* use specific font and color for h1 */
+    font-family: var(--cursive-font);
+    background-color: var(--black);
+    color: var(--off-white);
+}
+
+li {
+    font-family: var(--main-font);
+    /*font-size: x-large;*/
+    color: var(--red);
+}
+
+#bg-image {
+    /*background-color: lightblue;*/
+    /*flow stripesgenerator.com*/
+    border-radius: 13px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    box-shadow: 6px 6px 8px #d5d5d5, -6px -6px 8px #ebebeb;
+}
+
+
 

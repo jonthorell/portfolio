@@ -43,3 +43,13 @@ class portfolio(TemplateView):
     '''Class used to display the portfolio page '''
 
     template_name = 'core/portfolio.html'
+    
+class about(TemplateView):
+    '''Class used to display the about page '''
+
+    template_name = 'core/about.html'
+    
+class contact(TemplateView):
+    '''Class used to display the contact page '''
+
+    template_name = 'core/contact.html'

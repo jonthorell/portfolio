@@ -11,4 +11,6 @@ urlpatterns = [
     path("projects", views.projects.as_view(), name="projects"),
     path("synth", views.synth.as_view(), name="synth"),
     path("portfolio", views.portfolio.as_view(), name="portfolio"),
+    path("about", views.about.as_view(), name="about"),
+    path("contact", views.contact.as_view(), name="contact"),
 ]
