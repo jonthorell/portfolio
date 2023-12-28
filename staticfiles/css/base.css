@@ -1,0 +1,73 @@
+
+/* import google fonts */
+
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Roboto|Tangerine|Source Sans 3:bold&display=swap');
+
+
+:root {
+    /* Make sure variables are defined in the root context so available everywhere */
+    /*  fonts */
+    --main-font: 'Roboto', serif; /* used main text */
+    --cursive-font: 'Tangerine', serif; /* used for h1 */
+    /* colors */
+    --black: #000; /* used for html-background */
+    --off-white: #f6f6f6; /* used for h1 */
+    --white: #fff; /* used for maintext */
+    --red: #FF0000; /* used for disclaimer bar and h1 on startpage*/
+    --grey: #777777; /* table background */
+    /* utils */
+    /* used for forms */
+    --small-box-shadow: 1px -1px 7px 0 #00000061;
+  
+}
+
+html, body {
+    /* use the entire height */
+    height: 100%;
+}
+
+body {
+    /* body should use main-font as the font, and use flex display for flexibility */
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+main {
+    /* appply to the main section. I.e. the part of the page that is not a part of base.html 
+        Background should always be black
+        Text should always be white
+    */
+    flex: 1 0 auto;
+    background-color: var(--black);
+    /*background: url('/static/images/lps.webp') no-repeat center center fixed;
+    background-size: cover;*/
+    color: var(--white);
+}
+
+#copyright {
+    color: var(--red);
+    background-color: var(--black);
+}
+
+#logo {
+    /* style the text-only logo */
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px red, 0 0 1em white, 0 0 0.2em black;
+}
+
+p {
+    font-family: var(--main-font);
+    font-size: x-large;
+    color: var(--red);
+}
+
+.td-desc {
+    color: var(--red);
+    font-size: small;
+}
+
+.background {
+    color: var(--grey);
+}
+
