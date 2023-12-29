@@ -1,0 +1,15 @@
+<div class="alert toast fade mx-auto"
+     id="alert-info"
+     role="alert"
+     data-mdb-toast-init
+     data-mdb-autohide="true"
+     data-mdb-delay="2000"
+     data-mdb-position="top-right"
+     data-mdb-append-to-body="false"
+     data-mdb-stacking="true"
+     data-mdb-width="350px"
+     data-mdb-color="danger"
+>
+    <strong><i class="fa-solid fa-circle-info"></i>  Information:</strong>
+    {{ message | safe }}
+</div>

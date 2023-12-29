@@ -9,8 +9,17 @@
         <div class="col-md text-center">
             <h1>Contact</h1>
         </div>
-        <p></p>
-        <a href="https://pirate-island.herokuapp.com/" target="_blank">Pirate Island</a>
+        <form method="post" class="form mt-1 pt-1">
+            {% csrf_token %}
+            <fieldset class="mx-2 px-2 grey">
+                {{ form.as_p |safe}}
+                <br>
+                <div class="gap-2 d-grid d-md-block">
+                    <button class="btn btn-primary w-25 mb-2 rounded-0 rounded-pill text-capitalize no-overflow" data-mdb-ripple-init type="reset">Clear</button>
+                    <button class="btn btn-primary w-25 mb-2 rounded-0 rounded-pill text-capitalize no-overflow" data-mdb-ripple-init type="submit">Submit!</button>
+                </div>
+            </fieldset>
+        </form>
         <br>
     </div>
 </div>
