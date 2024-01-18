@@ -39,6 +39,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
 ALLOWED_HOSTS = ['portfolio-jt-5c98fa083d10.herokuapp.com', 'localhost', '127.0.0.1','jonasthorell.se','www.jonasthorell.se']
+# 
 
 
 # Application definition
