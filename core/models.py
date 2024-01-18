@@ -12,6 +12,8 @@ class project(models.Model):
     description = models.CharField(max_length=255, blank=False, null=False)
     updated_on = models.DateTimeField(auto_now=True)
     created_on = models.DateTimeField(auto_now_add=True)
+    github_url= models.CharField(max_length=60, blank=False, null=False, unique=False, default="localhost")
+    github_description = models.CharField(max_length=255, blank=True,null=True, default="Add description")
 
     class Meta:
         ordering = ['title']
