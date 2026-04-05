@@ -38,7 +38,9 @@ DEBUG = 'DEVELOPMENT' in os.environ
 
 X_FRAME_OPTIONS = "SAMEORIGIN"
 
-ALLOWED_HOSTS = ['portfolio-jt-5c98fa083d10.herokuapp.com', 'localhost', '127.0.0.1','jonasthorell.se','www.jonasthorell.se']
+ALLOWED_HOSTS = ['portfolio-jt-5c98fa083d10.herokuapp.com', 'localhost', '127.0.0.1','jonasthorell.se','www.jonasthorell.se','172.28.58.51','fontawsome.com']
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
+
 # 
 
 
@@ -69,6 +71,7 @@ MESSAGE_TAGS = {
 CSRF_TRUSTED_ORIGINS = [
     'https://portfolio-jt-5c98fa083d10.herokuapp.com/',
     'https://jonasthorell.se',
+    'http://172.28.58.51',
     'https://wwww.jonasthorell.se'
 ]
 
